@@ -14,7 +14,7 @@ export const db = createClient(SUPABASE_URL, SUPABASE_KEY, {
     persistSession: true,
     autoRefreshToken: true,
     storageKey: 'karat-auth-v2',
-    storage: window.localStorage,
+    storage: typeof window !== 'undefined' ? window.localStorage : undefined,
   },
 });
 
