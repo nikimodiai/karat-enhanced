@@ -8,7 +8,7 @@ export const N8N_BASE          = 'https://n8n.srv1639765.hstgr.cloud/webhook';
 export const N8N_UPLOAD_URL    = N8N_BASE + '/jewellery-upload';
 export const N8N_DELETE_URL    = N8N_BASE + '/delete-product';
 export const N8N_SIGNUP_URL    = N8N_BASE + '/store-approval-request';
-
+// this is export
 export const db = createClient(SUPABASE_URL, SUPABASE_KEY, {
   auth: {
     persistSession: true,
